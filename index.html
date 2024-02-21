@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang giới thiệu sản phẩm</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .intro{
+            background-image:url(shop.jpg);
+            background-position: 100px;
+            background-color: rgba(96, 93, 93);
+            font-size: 30px;
+            color: black;
+            opacity: 0.9;
+        }
+        #brand{ 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-style: italic;
+        }
+        header{
+            background-color: palegreen;
+            text-align: center;
+            font-size: 35px;
+            color: aqua;
+            border-radius: 5px;
+        }
+        nav{
+            float: left;
+            width: 40%;
+            height: 300px;
+            background-color: #ccc;
+            padding: 20px;
+        }
+        nav ul{
+            list-style-type: none;
+            padding: 0;
+            font-size: 20px;
+        }
+        section h3{
+            font-size: 20px;
+            color: #222;
+        }
+        section form input select{
+            width: 45%;
+            height: 30px;
+            margin-left:20px;
+        }
+        main article {
+            float: left;
+            padding: 20px;
+            width: 60%;
+            background-image: url(z5079586137314_29867857dc336c87e6f57fdaa277520f.jpg);
+            opacity: 0.9;
+            background-position: 0px;
+            height: 300px;
+        }
+        article h1{
+            font-size: 40px;
+            color: blueviolet;
+            margin-left: 50px;
+            font-weight: bold;
+        }
+        article a{
+            margin-left: 50px;
+            color: black;
+            font-size: 25px;
+        }
+        section::after{
+            content: "";
+            display: table;
+            clear: both;
+        }
+        footer{
+            background-color: #777;
+            padding: 10px;
+            text-align: center;
+            color: aliceblue;
+            margin-top: 5px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="intro">
+        <h2>SHOP ONLINE</h2>
+        <p>Hệ thống cửa hàng trên toàn quốc<br>   
+            Chúng tôi hướng đến mục tiêu mang lại niềm vui mặc mới mỗi ngày 
+            cho hàng triệu người tiêu dùng Việt.Chúng tôi tin rằng người dân
+            Việt Nam cũng đang hướng đến 1 cuộc sống năng động tích cực hơn
+        </p>
+    </div>
+    <header>
+        <h2 id="brand">MINH MIN<BR>STORE</h2>
+    </header>
+    <main>
+        <section>
+            <nav>
+            <ul>
+                <li><a href="#">Hà Nội</a></li>
+                <li><a href="#">THÀNH PHỐ HỒ CHÍ MINH</a></li>
+                <li><a href="#">ĐÀ NẴNG</a></li>
+            </ul>
+            <h3>Thông tin liên hệ</h3>
+            <form action="">
+                <input type="text" placeholder="Họ và tên">
+                <input type="text" placeholder="Số điện thoại">
+                <h3>Tìm kiếm cửa hàng</h3>
+                <label for="area">Khu vực lựa chọn</label>
+                <select name="area" id="">
+                    <option value="">Hà Nội</option>
+                    <option value="">Thành Phố Hồ Chí Minh</option>
+                    <option value="">Đà Nẵng</option>
+                </select>
+            </form>
+            </nav>    
+            <article>
+                <h1>Hà Nội</h1>
+                <a href="">AEON MALL HÀ ĐÔNG</a><br>
+                <a href="">AEON MALL LONG BIÊN </a><br>
+                <a href="">LOTTE MALL HÀ NỘI</a><br>
+            </article>
+        </section>
+    </main>    
+    <footer>
+        <div>
+            &copy; BY Nguyễn Lê Đăng Khánh
+        </div>
+    </footer>
+</body>
+</html>
